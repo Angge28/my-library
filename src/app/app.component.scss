@@ -1,0 +1,28 @@
+div {
+    text-align: center;
+  }
+  
+  .btn-container {
+    display: grid;
+    max-width: 800px;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .btn-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .btn-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  p {
+    margin: 0;
+  }
+  

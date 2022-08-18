@@ -1,0 +1,31 @@
+{
+  "name": "button-with-loaders",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^14.1.0",
+    "@angular/core": "^14.1.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "module": "fesm2015/button-with-loaders.mjs",
+  "es2020": "fesm2020/button-with-loaders.mjs",
+  "esm2020": "esm2020/button-with-loaders.mjs",
+  "fesm2020": "fesm2020/button-with-loaders.mjs",
+  "fesm2015": "fesm2015/button-with-loaders.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/button-with-loaders.mjs",
+      "es2020": "./fesm2020/button-with-loaders.mjs",
+      "es2015": "./fesm2015/button-with-loaders.mjs",
+      "node": "./fesm2015/button-with-loaders.mjs",
+      "default": "./fesm2020/button-with-loaders.mjs"
+    }
+  },
+  "sideEffects": false
+}

@@ -1,0 +1,61 @@
+<div>
+  <header style="padding-top: 2rem;">
+    <svg
+      width="40"
+      height="40"
+      viewBox="0 0 61 61"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M30.9198 60.1595C47.4883 60.1595 60.9198 46.728 60.9198 30.1595C60.9198 13.5909 47.4883 0.159485 30.9198 0.159485C14.3512 0.159485 0.919769 13.5909 0.919769 30.1595C0.919769 46.728 14.3512 60.1595 30.9198 60.1595Z"
+        fill="#E23237"
+      />
+      <path
+        d="M30.5044 13.7677L15.8199 46.4399L21.3056 46.3471L24.2539 38.9767H37.427L40.6549 46.4405L45.8981 46.5333L30.5044 13.7677ZM30.5418 24.2355L35.5051 34.61H26.1764L30.5418 24.2355Z"
+        fill="white"
+      />
+    </svg>
+
+    <h1 style="margin-top: 0.5rem;">
+      Buttons with Loaders
+    </h1>
+  </header>
+  <div class="btn-container">
+    <button
+      anjButton
+      [loading]="loading[1]"
+      variant="primary"
+      (click)="doSomething(1)"
+    >
+      Update
+    </button>
+    <button
+      anjButton
+      [loading]="loading[2]"
+      variant="secondary"
+      (click)="doSomething(2)"
+    >
+      Save User
+      <ng-template anjButtonLoader> Saving... </ng-template>
+    </button>
+    <button anjButton [loading]="loading[3]" (click)="doSomething(3)">
+      Search
+      <ng-template anjButtonLoader>
+        <anj-search-loader></anj-search-loader>
+      </ng-template>
+    </button>
+    <button
+      anjButton
+      [loading]="loading[4]"
+      variant="outline"
+      (click)="doSomething(4)"
+    >
+      Get Results
+      <ng-template anjButtonLoader>
+        <anj-circle-lines-loader></anj-circle-lines-loader>
+      </ng-template>
+    </button>
+  </div>
+</div>
+
